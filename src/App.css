@@ -1,9 +1,23 @@
 .App {
   max-width: 600px;
-  margin: 30px auto;
+  border: 1px solid #dadde1;
+  font-family: "Poppins", sans-serif;
+  color: black;
+  padding: 16px;
+  border-radius: 4px;
+  background: rgb(34, 193, 195);
+  background: linear-gradient(0deg, #068b78 0%, #9ed79a 100%);
 }
 
 .App footer {
   font-size: 11px;
   margin: 10px 0;
+}
+
+.App h1 {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  margin: 5px auto;
+  padding: 5px;
 }

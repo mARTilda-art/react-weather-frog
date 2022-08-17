@@ -1,11 +1,7 @@
 .Weather {
   border: 1px solid #dadde1;
-  font-family: "Poppins", sans-serif;
-  color: rgb(135, 135, 135);
   padding: 16px;
   border-radius: 4px;
-  background: rgb(34, 193, 195);
-  background: linear-gradient(0deg, #068b78 0%, #9ed79a 100%);
 }
 
 .Weather form {
@@ -75,4 +71,30 @@
 
 .Weather canvas {
   margin: 10px auto;
+}
+
+.Weather .btn-primary {
+  background-color: #ffcf5e;
+  border-color: #ffcf5e;
+  font-weight: bold;
+}
+
+.Weather .btn-primary:hover {
+  background-color: white;
+  border-color: #ffcf5e;
+  font-weight: bold;
+  color: #ffcf5e;
+}
+
+.Weather .btn-success {
+  background-color: #ffdd67;
+  border-color: #ffdd67;
+  font-weight: bold;
+}
+
+.Weather .btn-success:hover {
+  background-color: white;
+  border-color: #ffdd67;
+  font-weight: bold;
+  color: #ffdd67;
 }

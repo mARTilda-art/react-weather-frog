@@ -1,6 +1,7 @@
 import React from "react";
 import Weather from "./Weather";
 import LightningBox from "./LightningBox";
+import Conversion from "./Conversion";
 import "./App.css";
 
 export default function App() {
@@ -13,6 +14,7 @@ export default function App() {
           </h1>
         </header>
         <Weather defaultCity="Berlin" />
+        <Conversion />
         <LightningBox />
         <footer>
           This project is created by{" "}

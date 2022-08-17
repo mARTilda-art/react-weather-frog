@@ -1,0 +1,29 @@
+.Conversion .conversionalert {
+  padding: 10px;
+  border: 1px solid #dadde1;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.Conversion .degree-input {
+  font-size: 15px;
+}
+
+.Conversion .card {
+  font-size: 13px;
+  font-weight: bold;
+  background-color: transparent;
+}
+
+.btn-primary {
+  background-color: #ffcf5e;
+  border-color: #ffcf5e;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background-color: white;
+  border-color: #ffcf5e;
+  font-weight: bold;
+  color: #ffcf5e;
+}
