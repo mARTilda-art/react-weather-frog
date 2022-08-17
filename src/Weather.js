@@ -3,6 +3,7 @@ import WeatherInfo from "./WeatherInfo";
 import WeatherForecast from "./WeatherForecast";
 import axios from "axios";
 import "./Weather.css";
+/*import FormatedDate from "./FormatedDate";*/
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -19,6 +20,10 @@ export default function Weather(props) {
       icon: response.data.weather[0].icon,
       wind: response.data.wind.speed,
       city: response.data.name,
+      pressure: response.data.main.pressure,
+      /*sunrise: FormatedDate(response.data.sys.sunrise * 1000).slice(-5),
+      sunset: FormatedDate(response.data.sys.sunset * 1000).slice(-5), */
+      sunrise: response.data.sys.sunrise,
     });
   }
 

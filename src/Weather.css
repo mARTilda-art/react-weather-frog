@@ -1,9 +1,11 @@
 .Weather {
   border: 1px solid #dadde1;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
   color: rgb(135, 135, 135);
   padding: 16px;
   border-radius: 4px;
+  background: rgb(34, 193, 195);
+  background: linear-gradient(0deg, #068b78 0%, #9ed79a 100%);
 }
 
 .Weather form {
@@ -11,12 +13,21 @@
 }
 
 .Weather h1 {
-  color: #878787;
-  display: block;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  margin: 5px auto;
+  padding: 5px;
+}
+
+.Weather h2 {
+  color: rgb(65, 65, 65);
   font-size: 24px;
-  font-weight: 100;
-  line-height: 29px;
-  margin: 20px 0 0 0;
+  font-weight: 800;
+  line-height: 28px;
+  margin-bottom: 10px;
+  margin: 5px auto;
+  padding: 5px;
 }
 
 .Weather ul {
@@ -25,10 +36,17 @@
 }
 
 .Weather li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: rgb(65, 65, 65);
   font-size: 16px;
   font-weight: 100;
   line-height: 19px;
-  list-style: none;
+}
+
+.Weather li:first-letter {
+  text-transform: capitalize;
 }
 
 .Weather img {

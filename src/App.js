@@ -6,6 +6,11 @@ export default function App() {
   return (
     <div className="App">
       <div className="container">
+        <header>
+          <h1>
+            <i class="fa-solid fa-frog"></i> Weather Frog
+          </h1>
+        </header>
         <Weather defaultCity="Berlin" />
         <footer>
           This project is created by{" "}
@@ -18,7 +23,7 @@ export default function App() {
           </a>{" "}
           and is open-sourced on{" "}
           <a
-            href="https://github.com/mARTilda-art/react-weather-app"
+            href="https://github.com/mARTilda-art/react-weather-frog"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -26,7 +31,7 @@ export default function App() {
           </a>{" "}
           and is hosted on{" "}
           <a
-            href="https://symphonious-pegasus-adb3f8.netlify.app/"
+            href="https://earnest-belekoy-225853.netlify.app/"
             target="_blank"
             rel="noopener noreferrer"
           >
