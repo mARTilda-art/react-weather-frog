@@ -3,7 +3,6 @@ import WeatherInfo from "./WeatherInfo";
 import WeatherForecast from "./WeatherForecast";
 import axios from "axios";
 import "./Weather.css";
-/*import FormatedDate from "./FormatedDate";*/
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -23,7 +22,8 @@ export default function Weather(props) {
       pressure: response.data.main.pressure,
       /*sunrise: FormatedDate(response.data.sys.sunrise * 1000).slice(-5),
       sunset: FormatedDate(response.data.sys.sunset * 1000).slice(-5), */
-      sunrise: response.data.sys.sunrise,
+      sunrise: new Date(response.data.sys.sunrise * 1000).toLocaleTimeString(),
+      sunset: new Date(response.data.sys.sunset * 1000).toLocaleTimeString(),
     });
   }
 
@@ -54,7 +54,7 @@ export default function Weather(props) {
                 className="form-control"
                 autoFocus="on"
                 id="city-input"
-                autocomplete="off"
+                autoComplete="off"
                 onChange={handleCityChange}
               />
             </div>
@@ -70,7 +70,7 @@ export default function Weather(props) {
               <input
                 type="submit"
                 value="my position"
-                class="btn btn-success w-100"
+                className="btn btn-success w-100"
                 id="buttonCurrent"
               />
             </div>
