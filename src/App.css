@@ -21,3 +21,7 @@
   margin: 5px auto;
   padding: 5px;
 }
+
+.App a {
+  color: #ffcf5e;
+}
