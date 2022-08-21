@@ -47,7 +47,7 @@ export default function WeatherInfo(props) {
                 <th scope="col" colSpan="3">
                   type
                 </th>
-                <th scope="col" colspan="2">
+                <th scope="col" colSpan="2">
                   value
                 </th>
               </tr>

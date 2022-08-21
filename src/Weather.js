@@ -70,7 +70,7 @@ export default function Weather(props) {
                 id="buttonSearch"
               />
             </div>
-            <div class="col-4">
+            <div className="col-4">
               <input
                 type="submit"
                 value="my position"

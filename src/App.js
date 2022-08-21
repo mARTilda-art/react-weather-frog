@@ -10,7 +10,7 @@ export default function App() {
       <div className="container">
         <header>
           <h1>
-            <i class="fa-solid fa-frog"></i> Weather Frog
+            <i className="fa-solid fa-frog"></i> Weather Frog
           </h1>
         </header>
         <Weather defaultCity="Berlin" />
