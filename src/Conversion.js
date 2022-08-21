@@ -44,7 +44,6 @@ export default function Conversion(props) {
                 </th>
               </tr>
             </thead>
-            <tbody></tbody>
           </table>
         </div>
       </form>
