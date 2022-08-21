@@ -22,8 +22,12 @@ export default function Weather(props) {
       pressure: response.data.main.pressure,
       /*sunrise: FormatedDate(response.data.sys.sunrise * 1000).slice(-5),
       sunset: FormatedDate(response.data.sys.sunset * 1000).slice(-5), */
-      sunrise: new Date(response.data.sys.sunrise * 1000).toLocaleTimeString(),
-      sunset: new Date(response.data.sys.sunset * 1000).toLocaleTimeString(),
+      sunrise: new Date(response.data.sys.sunrise * 1000)
+        .toLocaleTimeString()
+        .slice(0, -3),
+      sunset: new Date(response.data.sys.sunset * 1000)
+        .toLocaleTimeString()
+        .slice(0, -3),
     });
   }
 
