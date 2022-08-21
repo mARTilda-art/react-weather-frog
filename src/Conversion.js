@@ -12,12 +12,11 @@ export default function Conversion(props) {
   function handleSubmit(event) {
     event.preventDefault();
   }
-
   return (
     <div className="conversion">
       <form onSubmit={handleSubmit}>
         <div className="col-12">
-          <table className="conversionalert table">
+          <table className="conversionalert ">
             <thead>
               <tr>
                 <th scope="col" colSpan="7">
@@ -27,14 +26,14 @@ export default function Conversion(props) {
                   <input
                     type="text"
                     placeholder="degrees"
-                    className="form-control"
+                    className="form-control "
                     id="degree-input"
                     autoComplete="off"
                     value={props.fahrenheit}
                     onChange={handleDegreeChange}
                   />
                 </th>
-                <th scope="col" colSpan="4">
+                <th scope="col" colSpan="3">
                   °C in °F?
                 </th>
                 <th scope="col" colSpan="2">

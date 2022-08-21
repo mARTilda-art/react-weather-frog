@@ -37,7 +37,7 @@
   margin: 0;
   padding: 0;
   color: rgb(65, 65, 65);
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 100;
   line-height: 19px;
 }
@@ -47,10 +47,11 @@
 }
 
 .Weather img {
-  height: 64px;
-  width: 64px;
-  display: inline-block;
-  margin-right: 10px;
+  height: 80%;
+  width: 80%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
 }
 .Weather .temperature {
   font-weight: 400;
