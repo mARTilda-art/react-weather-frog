@@ -20,8 +20,6 @@ export default function Weather(props) {
       wind: response.data.wind.speed,
       city: response.data.name,
       pressure: response.data.main.pressure,
-      /*sunrise: FormatedDate(response.data.sys.sunrise * 1000).slice(-5),
-      sunset: FormatedDate(response.data.sys.sunset * 1000).slice(-5), */
       sunrise: new Date(response.data.sys.sunrise * 1000)
         .toLocaleTimeString()
         .slice(0, -3),
@@ -36,6 +34,11 @@ export default function Weather(props) {
     search();
   }
 
+  function handleSubmitPosition(event) {
+    event.preventDefault();
+    navigator.geolocation.getCurrentPosition(myPosition);
+  }
+
   function handleCityChange(event) {
     setCity(event.target.value);
   }
@@ -43,6 +46,14 @@ export default function Weather(props) {
   function search() {
     const apiKey = "54fc91d14fe02d75665772e36d182ac8";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    axios.get(apiUrl).then(handleResponse);
+  }
+
+  function myPosition(position) {
+    let latitude = position.coords.latitude;
+    let longitude = position.coords.longitude;
+    let apiKey = "54fc91d14fe02d75665772e36d182ac8";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
   }
 
@@ -70,16 +81,19 @@ export default function Weather(props) {
                 id="buttonSearch"
               />
             </div>
-            <div className="col-4">
-              <input
-                type="submit"
-                value="my position"
-                className="btn btn-success w-100"
-                id="buttonCurrent"
-              />
-            </div>
           </div>
         </form>
+        <div className="col-4">
+          <button
+            type="button"
+            className="btn btn-success w-100"
+            id="buttonCurrent"
+            onClick={handleSubmitPosition}
+          >
+            my position{" "}
+          </button>
+        </div>
+
         <WeatherInfo data={weatherData} />
         <WeatherForecast coordinates={weatherData.coordinates} />
       </div>
