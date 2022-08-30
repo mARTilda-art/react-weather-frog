@@ -114,12 +114,13 @@ export default function WeatherInfo(props) {
         </div>
 
         <div className="col-6">
-          <div className="photo">
+          <div className="photo d-none d-md-block">
             <div className="photo center" id="photo">
               <img
                 src="https://images.pexels.com/photos/2175952/pexels-photo-2175952.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 alt="weathermood"
                 title="weathermood"
+                class="img-fluid rounded"
               />
             </div>
           </div>

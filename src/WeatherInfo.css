@@ -5,3 +5,8 @@ table {
 description {
   font-size: 26px;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}

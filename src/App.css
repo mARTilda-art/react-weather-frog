@@ -25,3 +25,8 @@
 .App a {
   color: #ffcf5e;
 }
+
+.App img {
+  max-width: 100%;
+  height: auto;
+}
