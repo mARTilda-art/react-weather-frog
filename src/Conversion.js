@@ -16,7 +16,7 @@ export default function Conversion(props) {
     <div className="conversion">
       <form onSubmit={handleSubmit}>
         <div className="col-12">
-          <table className="conversionalert ">
+          <table className="conversionalert">
             <thead>
               <tr>
                 <th scope="col" colSpan="7">
@@ -26,7 +26,7 @@ export default function Conversion(props) {
                   <input
                     type="text"
                     placeholder="degrees"
-                    className="form-control "
+                    className="form-control form-control-sm"
                     id="degree-input"
                     autoComplete="off"
                     value={props.fahrenheit}

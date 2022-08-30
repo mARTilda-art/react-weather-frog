@@ -6,7 +6,12 @@
 }
 
 .Weather form {
-  margin: 20px;
+  margin: 18px;
+  display: flex;
+}
+
+.Weather buttonCurrent {
+  display: flex;
 }
 
 .Weather h1 {
@@ -79,6 +84,7 @@
   background-color: #ffcf5e;
   border-color: #ffcf5e;
   font-weight: bold;
+  font-size: 14px;
 }
 
 .Weather .btn-primary:hover {
@@ -92,6 +98,7 @@
   background-color: #ffdd67;
   border-color: #ffdd67;
   font-weight: bold;
+  font-size: 14px;
 }
 
 .Weather .btn-success:hover {

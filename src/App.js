@@ -25,7 +25,7 @@ export default function App() {
           >
             mARTilda
           </a>{" "}
-          and is open-sourced on{" "}
+          , is open-sourced on{" "}
           <a
             href="https://github.com/mARTilda-art/react-weather-frog"
             target="_blank"
