@@ -7,7 +7,7 @@ import "./WeatherInfo.css";
 export default function WeatherInfo(props) {
   return (
     <div className="WeatherInfo">
-      <div className="row overview">
+      <div className="d-flex row overview">
         <div className="col-7">
           <h2 id="city">{props.data.city}</h2>
           <ul>

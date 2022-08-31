@@ -30,3 +30,12 @@
   max-width: 100%;
   height: auto;
 }
+
+.App .container {
+  /*display: inline-flex;
+  flex-direction: row;
+  justify-content: space-around;
+ */
+  flex-direction: column;
+  justify-content: space-evenly;
+}
