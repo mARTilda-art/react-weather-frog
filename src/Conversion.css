@@ -1,25 +1,32 @@
+.conversion .card {
+  background-color: transparent;
+  font-size: 13px;
+  font-weight: bold;
+}
+
 .conversion .degree-input {
   font-size: 15px;
 }
 
-.conversion .card {
-  font-size: 13px;
-  font-weight: bold;
-  background-color: transparent;
-}
-
 .fahrenheit {
   color: #ffcf5e;
+  margin-left: 30px;
 }
 
 .conversion {
   border-radius: 5px;
   border: 1px solid #dadde1;
-  padding: 10px;
   margin-bottom: 5px;
+  padding: 10px;
 }
 
 .conversion .conversionalert {
-  padding: 10px;
   margin-bottom: 5px;
+  padding: 10px;
+}
+
+.form-control {
+  margin-left: 20px;
+  margin-right: 20px;
+  max-width: 200px;
 }

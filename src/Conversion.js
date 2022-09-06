@@ -33,7 +33,7 @@ export default function Conversion(props) {
                     onChange={handleDegreeChange}
                   />
                 </th>
-                <th scope="col" colSpan="3">
+                <th scope="col" colSpan="4">
                   °C in °F?
                 </th>
                 <th scope="col" colSpan="2">

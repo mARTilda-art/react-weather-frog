@@ -1,7 +1,7 @@
 import React from "react";
-import Weather from "./Weather";
-import LightningBox from "./LightningBox";
 import Conversion from "./Conversion";
+import LightningBox from "./LightningBox";
+import Weather from "./Weather";
 import "./App.css";
 
 export default function App() {

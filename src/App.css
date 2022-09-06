@@ -1,12 +1,12 @@
 .App {
-  max-width: 600px;
-  border: 1px solid #dadde1;
-  font-family: "Poppins", sans-serif;
-  color: black;
-  padding: 16px;
-  border-radius: 4px;
   background: rgb(34, 193, 195);
   background: linear-gradient(0deg, #068b78 0%, #9ed79a 100%);
+  border: 1px solid #dadde1;
+  border-radius: 4px;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  max-width: 600px;
+  padding: 16px;
 }
 
 .App footer {
@@ -17,9 +17,9 @@
 .App h1 {
   font-size: 40px;
   font-weight: bold;
-  text-align: center;
   margin: 5px auto;
   padding: 5px;
+  text-align: center;
 }
 
 .App a {
@@ -27,15 +27,11 @@
 }
 
 .App img {
-  max-width: 100%;
   height: auto;
+  max-width: 100%;
 }
 
 .App .container {
-  /*display: inline-flex;
-  flex-direction: row;
-  justify-content: space-around;
- */
   flex-direction: column;
   justify-content: space-evenly;
 }

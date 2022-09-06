@@ -5,9 +5,9 @@
 }
 
 .lightningbox {
-  padding: 20px;
   border: 1px solid #dadde1;
   border-radius: 5px;
+  padding: 20px;
 }
 
 a:link {

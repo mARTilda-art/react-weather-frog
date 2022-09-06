@@ -1,13 +1,14 @@
 .Weather {
   border: 1px solid #dadde1;
-  padding: 16px;
   border-radius: 5px;
   margin-bottom: 15px;
+  padding: 16px;
 }
 
 .Weather form {
-  margin: 14px;
   display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .Weather buttonCurrent {
@@ -17,9 +18,9 @@
 .Weather h1 {
   font-size: 40px;
   font-weight: bold;
-  text-align: center;
   margin: 5px auto;
   padding: 5px;
+  text-align: center;
 }
 
 .Weather h2 {
@@ -27,8 +28,8 @@
   font-size: 24px;
   font-weight: 800;
   line-height: 28px;
-  margin-bottom: 10px;
   margin: 5px auto;
+  margin-bottom: 10px;
   padding: 5px;
 }
 
@@ -38,13 +39,12 @@
 }
 
 .Weather li {
-  list-style: none;
-  margin: 0;
-  padding: 0;
   color: rgb(65, 65, 65);
   font-size: 16px;
   font-weight: 100;
   line-height: 19px;
+  list-style: none;
+  margin: 0;
   padding: 5px;
 }
 
@@ -53,29 +53,29 @@
 }
 
 .Weather img {
-  height: 80%;
-  width: 80%;
   display: block;
-  margin-right: auto;
+  height: 80%;
   margin-left: auto;
+  margin-right: auto;
+  width: 80%;
 }
 
 .Weather .temperature {
-  font-weight: 400;
   color: rgb(33, 33, 33);
   font-size: 64px;
+  font-weight: 400;
   line-height: 64px;
   margin-left: 10px;
 }
 
 .Weather .unit {
+  color: rgb(33, 33, 33);
   font-size: 16px;
   font-weight: 400;
-  color: rgb(33, 33, 33);
-  position: relative;
-  top: -34px;
   margin-left: 5px;
   line-height: 1;
+  position: relative;
+  top: -34px;
 }
 
 .Weather canvas {
@@ -85,27 +85,29 @@
 .Weather .btn-primary {
   background-color: #ffcf5e;
   border-color: #ffcf5e;
-  font-weight: bold;
   font-size: 14px;
+  font-weight: bold;
+  margin-left: 15px;
 }
 
 .Weather .btn-primary:hover {
   background-color: white;
   border-color: #ffcf5e;
-  font-weight: bold;
   color: #ffcf5e;
+  font-weight: bold;
+  margin-left: 15px;
 }
 
 .Weather .btn-success {
   background-color: #ffdd67;
   border-color: #ffdd67;
-  font-weight: bold;
   font-size: 14px;
+  font-weight: bold;
 }
 
 .Weather .btn-success:hover {
   background-color: white;
   border-color: #ffdd67;
-  font-weight: bold;
   color: #ffdd67;
+  font-weight: bold;
 }
